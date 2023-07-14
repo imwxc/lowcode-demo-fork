@@ -93,3 +93,5 @@ typings/
 
 # mac config files
 .DS_Store
+
+*.code-workspace
