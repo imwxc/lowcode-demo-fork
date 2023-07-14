@@ -20,6 +20,7 @@ import SetRefPropPlugin from '@alilc/lowcode-plugin-set-ref-prop';
 import LogoSamplePlugin from './plugins/plugin-logo-sample';
 import SimulatorLocalePlugin from './plugins/plugin-simulator-locale';
 import lowcodePlugin from './plugins/plugin-lowcode-component';
+import LowcodePluginPluginDemo from './plugins/plugin-demo'
 import appHelper from './appHelper';
 import './global.scss';
 
@@ -51,6 +52,8 @@ async function registerPlugins() {
   await plugins.register(DefaultSettersRegistryPlugin);
 
   await plugins.register(LogoSamplePlugin);
+
+  await plugins.register(LowcodePluginPluginDemo)
 
   await plugins.register(ComponentPanelPlugin);
 
